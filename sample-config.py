@@ -1,5 +1,5 @@
-# The base of your content URL - i.e where your images will be hosted. Make sure to include the /
-content = "https://content.temmie.dog/"
+# The path of your content directory - i.e where your images will be stored. Make sure to include the /
+content = "images/"
 # Your MongoDB address
 mongodb_address = "mongodb+srv://username:password@your.mongo.db.net/"
 # Your MongoDB admin address
