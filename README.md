@@ -1,6 +1,7 @@
 # temmie.dog
-haha temmie go bork bork bork bork bork bork bork bork bork bork bork bork bork 
+haha temmie go bork bork bork bork bork bork bork bork bork bork bork bork bork
 ## how to run it
+- install python (i use 3.8.5)
 - install jinja2, fastapi, aiofiles, uvicorn and pymongo
 - set up your own mongodb database and collection
 - set credentials and other variables in a file called config.py, use the sample-config.py file for example
