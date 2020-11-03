@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>temmie.dog</title>
+        <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+    </head>
+    <body>
+    <div id="content">
+        <center><!-- YES I'M AWARE I SHOULDN'T USE CENTER I'M JUST LAZY-->
+        <h1>Temmie!</h1>
+        <h3>Temmie Quote Of The Day: "Bork!"</h3>
+        <img class="NO-CACHE" src="bork/image" alt="Temmie"/>
+        <h4><a href="api/">API</a> | <a href="https://instagram.com/lilypupchu">Follow Temmie on Instagram</a> | <a href="https://twitter.com/LilyPichu">Follow Temmie's Mom on Twitter</a> | <a href="https://twitter.com/heyimdaf">Follow the guy that made this on Twitter</a></a></h4>
+        <h4><a href="https://github.com/dxf/temmie.dog">Contribute and view source code on GitHub!</a></h4>
+        </center>
+    </div>
+    </body>
+    <script>
+        var items = document.querySelectorAll("img.NO-CACHE");
+        for (var i = items.length; i--;) {
+            var img = items[i];
+            img.src = img.src + '?' + Date.now();
+        }
+    </script>
+</html>
