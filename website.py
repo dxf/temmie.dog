@@ -28,7 +28,7 @@ def read_item():
 @app.get("/bork/json")
 def read_item():
     dog = list(collection.aggregate([{"$sample": {"size": 1}}]))
-    return({"url":main+content+dog[0]["filename"],"source":dog[0]["source"]})
+    return({"url":main+content+dog[0]["filename"],})
 
 @app.get("/api/")
 def read_item(request: Request):

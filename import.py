@@ -9,15 +9,12 @@ client = pymongo.MongoClient(mongodb_address_admin)
 db = client[mongodb_db]
 collection = db['bork']
 # define where you keep a local mirror of your images directory here
-dire = "/Users/daf/temmie-content/images/"
+dire = "/Users/daf/temmie.dog/images/"
 # recursively list through your image directory, adding each image to the database
 for i in listdir(dire):
     if i[0] == "i":
         source = "insta"
-    elif i[0] == "t":
-        source = "lilytwi"
     image = {
         "filename": i,
-        "source": source
     }
     collection.insert_one(image)
